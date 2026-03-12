@@ -1,0 +1,5 @@
+{
+  "name": "Aetherius Med-AI",
+  "description": "An advanced medical diagnostic platform with AI agents for brain tumor, kidney stones, heart failure, and glaucoma detection using MRI and medical imaging.",
+  "requestFramePermissions": []
+}

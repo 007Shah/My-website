@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --color-obsidian: #050505;
+  --color-charcoal: #121212;
+  --color-gold: #D4AF37;
+  --color-gold-muted: rgba(212, 175, 55, 0.5);
+  
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-obsidian text-white font-sans overflow-x-hidden;
+    background: radial-gradient(circle at 50% -20%, #1a1a1a 0%, #050505 100%);
+    min-height: 100vh;
+    cursor: none;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/5 backdrop-blur-2xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.37)];
+  }
+
+  .glass-gold {
+    @apply bg-gold/5 backdrop-blur-2xl border border-gold/20 shadow-[0_8px_32px_0_rgba(212,175,55,0.1)];
+  }
+  
+  .gold-gradient {
+    background: linear-gradient(135deg, #D4AF37 0%, #F2D472 50%, #D4AF37 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .floating {
+    animation: floating 6s ease-in-out infinite;
+  }
+
+  .animate-scroll {
+    animation: scroll 40s linear infinite;
+  }
+
+  .animate-scroll-reverse {
+    animation: scroll-reverse 40s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes scroll-reverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+
+  @keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+}
+
+/* Custom Cursor Styles */
+.cursor-dot {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #D4AF37;
+  border-radius: 50%;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+.cursor-outline {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #D4AF37;
+  border-radius: 50%;
+  z-index: 9998;
+  transition: transform 0.15s ease-out;
+  mix-blend-mode: difference;
+}
+
+/* Page Transitions */
+.page-transition-curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #050505;
+  z-index: 10000;
+  transform: translateY(100%);
+}

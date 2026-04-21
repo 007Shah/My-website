@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
+  /* Dynamic Background and Text variables */
+  --color-obsidian: var(--bg-base);
+  --color-gray-deep: var(--bg-surface);
+  --color-white: var(--text-main);
+  
+  --color-mustard: var(--theme-color);
+  --color-theme: var(--theme-color);
+  --color-theme-content: var(--theme-content);
+}
+
+@layer base {
+  :root {
+    /* Accent Theme Colors */
+    --theme-color: #FFCC00;
+    --theme-content: #000000;
+    
+    /* Background Theme Colors (Default: Dark) */
+    --bg-base: #000000;
+    --bg-surface: #1A1A1A;
+    --text-main: #FFFFFF;
+  }
+  
+  :root[data-theme='mustard'] {
+    --theme-color: #FFCC00;
+    --theme-content: #000000;
+  }
+  
+  :root[data-theme='crimson'] {
+    --theme-color: #FF3333;
+    --theme-content: #FFFFFF;
+  }
+  
+  :root[data-theme='toxic'] {
+    --theme-color: #00FF66;
+    --theme-content: #000000;
+  }
+  
+  :root[data-theme='cyber'] {
+    --theme-color: #00E5FF;
+    --theme-content: #000000;
+  }
+  
+  :root[data-theme='violet'] {
+    --theme-color: #B026FF;
+    --theme-content: #FFFFFF;
+  }
+
+  /* Background Theme Modes */
+  :root[data-bg-theme='dark'] {
+    --bg-base: #0a0a0a;
+    --bg-surface: #171717;
+    --text-main: #FFFFFF;
+  }
+
+  :root[data-bg-theme='light'] {
+    --bg-base: #F5F5F0;
+    --bg-surface: #E5E5DF;
+    --text-main: #0A0A00;
+  }
+
+  :root[data-bg-theme='midnight'] {
+    --bg-base: #060913;
+    --bg-surface: #111827;
+    --text-main: #FFFFFF;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-obsidian text-white font-sans antialiased overflow-x-hidden;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+/* Hide scrollbar for cleaner look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-surface);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-color);
+}

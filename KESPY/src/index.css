@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-white: #ffffff;
+  --color-slate-50: #FAF8F4; /* Luminous linen bone-white */
+  --color-slate-100: #F0E5D7; /* Soft sand warm undertone */
+  --color-slate-200: #DECDBC; /* Elegant contours and borders */
+  --color-slate-300: #937C68; /* cashmere walnut brown descriptors */
+  --color-slate-400: #634133; /* Warm reddish-brown (#634133) */
+  --color-slate-450: #392A16; /* Rich espresso mud (#392A16) */
+  --color-slate-500: #392A16; /* Dark chocolate (#392A16) */
+  --color-slate-600: #231C07; /* Core deepest dark charcoal brown (#231C07) */
+  --color-slate-700: #231C07; /* Near solid bronze */
+  --color-slate-800: #1C150D; 
+  --color-slate-900: #0B0804;
+
+  --color-gray-50: #FAF8F4;
+  --color-gray-100: #F0E5D7;
+  --color-gray-200: #DECDBC;
+  --color-gray-300: #937C68;
+  --color-gray-400: #554433;
+  --color-gray-550: #392A16;
+  --color-gray-500: #392A16;
+  --color-gray-650: #231C07;
+  --color-gray-700: #231C07;
+  --color-gray-800: #1C150D;
+  --color-gray-900: #0B0804;
+
+  /* Primary Accent & Brand Color definitions mapped exactly to requested hex codes */
+  --color-indigo-50: #FAF5F0;  /* Pure light sand contrast background */
+  --color-indigo-100: #F3E4D6; /* Warm sand accent */
+  --color-indigo-200: #E2C0AD; /* Beautiful soft peach blush border */
+  --color-indigo-300: #D09A82; /* Muted terracotta copper */
+  --color-indigo-400: #B86F52; /* Terracotta copper primary (#B86F52) */
+  --color-indigo-500: #B86F52; /* Terracotta copper primary key (#B86F52) */
+  --color-indigo-600: #634133; /* Warm reddish-brown contrast action (#634133) */
+  --color-indigo-700: #392A16; /* Dark chocolate mud hover state (#392A16) */
+  --color-indigo-800: #231C07; /* Core darkest brand charcoal (#231C07) */
+  --color-indigo-900: #120E04;
+  
+  --color-pink-50: #FEF9F6;
+  --color-pink-100: #FCECE4;
+  --color-pink-200: #F9D6C7;
+  --color-pink-500: #F78764; /* Gorgeous soft luminous coral accent (#F78764) */
+
+  --color-border: #DECDBC;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --animate-blob: blob 7s infinite;
+
+  @keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+  }
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at top right, #fefbf9 0%, #faf6f0 50%, #f4ece2 100%) !important;
+  color: #231c07;
+  background-attachment: fixed;
+}
+
+/* Elegant, responsive buttons with beautiful spring hover lifts and shadow animations across the entire application */
+button, [role="button"] {
+  will-change: transform, box-shadow;
+  transition: all 0.22s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+button:not(:disabled):hover, [role="button"]:not(:disabled):hover {
+  transform: translateY(-2.5px) scale(1.03);
+  box-shadow: 0 12px 24px -6px rgba(35, 28, 7, 0.22) !important;
+  filter: brightness(1.04);
+}
+
+button:not(:disabled):active, [role="button"]:not(:disabled):active {
+  transform: translateY(0.5px) scale(0.97);
+  box-shadow: 0 4px 10px -4px rgba(35, 28, 7, 0.12) !important;
+  filter: brightness(0.95);
+  transition-duration: 0.1s !important;
+}
+
+/* Dynamic modern form controls adaptation for light-mode theme */
+input, textarea, select {
+  color: #231c07 !important;
+  background-color: #ffffff !important;
+  border-color: #d2bea7 !important;
+}
+input::placeholder, textarea::placeholder {
+  color: #b89c82 !important;
+}
+input:focus, textarea:focus {
+  border-color: #b86f52 !important;
+  box-shadow: 0 0 0 2px rgba(184, 111, 82, 0.15) !important;
+}
+
+/* Beautiful custom thin scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(184, 111, 82, 0.2);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(184, 111, 82, 0.4);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Hover scales for modern interactive engagement */
+.hover-scale {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hover-scale:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 12px 30px -10px rgba(184, 111, 82, 0.08);
+}

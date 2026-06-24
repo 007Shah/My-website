@@ -1,0 +1,6 @@
+{
+  "name": "Kespy",
+  "description": "A modern, aesthetic mini social media platform with user profiles, posts, likes, followers, and secure authentication.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

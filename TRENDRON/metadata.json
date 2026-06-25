@@ -1,0 +1,8 @@
+{
+  "name": "Trendora",
+  "description": "A high-fidelity, premium, minimalist e-commerce showcase featuring interactive product flows, smooth scrolling, and scroll-triggered layout animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

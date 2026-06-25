@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-footer-text: #dbc6a4;
+  --color-primary: #775a19;
+  --color-primary-container: #c5a059;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #4e3700;
+  --color-inverse-primary: #e9c176;
+
+  --color-secondary: #5f5e5f;
+  --color-secondary-container: #e2dfe0;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #636263;
+
+  --color-tertiary: #585f6c;
+  --color-tertiary-container: #9ea5b4;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #343b48;
+
+  --color-background: #f9f9f7;
+  --color-on-background: #1a1c1b;
+
+  --color-surface: #f9f9f7;
+  --color-surface-dim: #dadad8;
+  --color-surface-bright: #f9f9f7;
+  --color-on-surface: #1a1c1b;
+  --color-on-surface-variant: #4e4639;
+
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f4f4f2;
+  --color-surface-container: #eeeeec;
+  --color-surface-container-high: #e8e8e6;
+  --color-surface-container-highest: #e2e3e1;
+
+  --color-inverse-surface: #2f3130;
+  --color-inverse-on-surface: #f1f1ef;
+
+  --color-outline: #7f7667;
+  --color-outline-variant: #d1c5b4;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+
+  /* Custom Spacing Scale for Tailwind v4 */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-base: 1.25rem;
+  --spacing-md: 1.75rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 5.5rem;
+  --spacing-gutter: 2.25rem;
+
+  --width-container-max: 1360px;
+}
+
+/* Explicit fallback utilities for absolute layout safety */
+.max-w-container-max {
+  max-width: 1360px;
+}
+.px-gutter {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+@media (max-width: 768px) {
+  .px-gutter {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+/* Custom Styles matching design system details */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes pulse-gold {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(119, 90, 25, 0.4); }
+  70% { transform: scale(1.02); box-shadow: 0 0 0 15px rgba(119, 90, 25, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(119, 90, 25, 0); }
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 2.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.shimmer-bg {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.custom-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 1px var(--color-primary);
+}

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Brand Palette (60-30-10 Rule) */
+  --color-forest: #2F6B3F;
+  --color-forest-dark: #1F492B;
+  --color-forest-light: #4A8C5B;
+  --color-sage: #7FB77E;
+  --color-sage-light: #D4ECD3;
+  --color-sage-dark: #5B8D5A;
+  --color-gold: #F7C85C;
+  --color-gold-dark: #DFA423;
+  --color-gold-light: #FBE2A5;
+  --color-cream: #FFF6C0;
+  --color-cream-light: #FFFBE3;
+  --color-emerald-deep: #1E3F27;
+}
+
+html, body {
+  font-family: var(--font-sans);
+  background-color: #f8fafc;
+  color: #0f172a;
+  overscroll-behavior-y: none;
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbars for a premium editorial finish */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Collaborative Project Management Tool",
+  "description": "Secure collaborative project management with custom ID authentication, isolated workspaces, role-based controls, real-time-like chats, and progress analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,444 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "customId": "PM100",
+      "name": "Patricia Miller",
+      "globalRole": "MANAGER"
+    },
+    {
+      "id": "u2",
+      "customId": "LD501",
+      "name": "Lucas Vance",
+      "globalRole": "TEAM LEADER"
+    },
+    {
+      "id": "u3",
+      "customId": "LD502",
+      "name": "Devon Chen",
+      "globalRole": "TEAM LEADER"
+    },
+    {
+      "id": "u4",
+      "customId": "DV001",
+      "name": "Alex Mercer",
+      "globalRole": "SENIOR DEVELOPER"
+    },
+    {
+      "id": "u5",
+      "customId": "DV002",
+      "name": "Sarah Connor",
+      "globalRole": "SENIOR DESIGNER"
+    },
+    {
+      "id": "u6",
+      "customId": "DV003",
+      "name": "James Holden",
+      "globalRole": "JUNIOR DEVELOPER"
+    },
+    {
+      "id": "u7",
+      "customId": "DV004",
+      "name": "Naomi Nagata",
+      "globalRole": "ML ENGINEER"
+    },
+    {
+      "id": "u8",
+      "customId": "DV005",
+      "name": "Elio Perlman",
+      "globalRole": "INTERNEE"
+    },
+    {
+      "id": "u9",
+      "customId": "MN201",
+      "name": "Thomas Wayne",
+      "globalRole": "MANAGER"
+    },
+    {
+      "id": "u10",
+      "customId": "HR901",
+      "name": "Martha Kent",
+      "globalRole": "HR"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-alpha",
+      "name": "Project Alpha - Core Engine",
+      "description": "Modernizing the cluster core orchestration engines, reducing message distribution latencies, and enabling automated failover recovery sequences across multi-region edge nodes.",
+      "deadline": "2026-07-20"
+    },
+    {
+      "id": "proj-beta",
+      "name": "Project Beta - NextGen UI",
+      "description": "Revamping public performance dashboards and implementing modular canvas grids powered by fine-tuned motion layouts and real-time refresh updates.",
+      "deadline": "2026-06-18"
+    },
+    {
+      "id": "proj-gamma",
+      "name": "Project Gamma - Security Shield",
+      "description": "Deploying end-to-end zero-trust network credentials, continuous audit monitors, and automated rate-limiting security walls across high-frequency API endpoints.",
+      "deadline": "2026-09-01"
+    }
+  ],
+  "memberships": [
+    {
+      "id": "m1",
+      "userId": "u2",
+      "projectId": "proj-alpha",
+      "role": "TEAM_LEADER",
+      "jobTitle": "Lead DevOps Specialist"
+    },
+    {
+      "id": "m2",
+      "userId": "u1",
+      "projectId": "proj-alpha",
+      "role": "TEAM_LEADER",
+      "jobTitle": "Principal Product Manager"
+    },
+    {
+      "id": "m3",
+      "userId": "u4",
+      "projectId": "proj-alpha",
+      "role": "TEAM_MEMBER",
+      "jobTitle": "Senior Systems Architect"
+    },
+    {
+      "id": "m4",
+      "userId": "u5",
+      "projectId": "proj-alpha",
+      "role": "TEAM_MEMBER",
+      "jobTitle": "Security Lead"
+    },
+    {
+      "id": "m5",
+      "userId": "u6",
+      "projectId": "proj-alpha",
+      "role": "SPECTATOR",
+      "jobTitle": "External Engineering Auditor"
+    },
+    {
+      "id": "m6",
+      "userId": "u3",
+      "projectId": "proj-beta",
+      "role": "TEAM_LEADER",
+      "jobTitle": "Design Lead"
+    },
+    {
+      "id": "m7",
+      "userId": "u1",
+      "projectId": "proj-beta",
+      "role": "TEAM_LEADER",
+      "jobTitle": "Principal Product Manager"
+    },
+    {
+      "id": "m8",
+      "userId": "u7",
+      "projectId": "proj-beta",
+      "role": "TEAM_MEMBER",
+      "jobTitle": "Frontend Architect"
+    },
+    {
+      "id": "m9",
+      "userId": "u8",
+      "projectId": "proj-beta",
+      "role": "TEAM_MEMBER",
+      "jobTitle": "Senior UI Engineer"
+    },
+    {
+      "id": "m10",
+      "userId": "u4",
+      "projectId": "proj-beta",
+      "role": "SPECTATOR",
+      "jobTitle": "Systems Consult"
+    },
+    {
+      "id": "m11",
+      "userId": "u1",
+      "projectId": "proj-gamma",
+      "role": "TEAM_LEADER",
+      "jobTitle": "Principal Product Manager"
+    },
+    {
+      "id": "m12",
+      "userId": "u5",
+      "projectId": "proj-gamma",
+      "role": "TEAM_MEMBER",
+      "jobTitle": "Security Lead"
+    }
+  ],
+  "columns": [
+    {
+      "id": "col-a1",
+      "name": "To Do",
+      "position": 0,
+      "projectId": "proj-alpha"
+    },
+    {
+      "id": "col-a2",
+      "name": "In Progress",
+      "position": 1,
+      "projectId": "proj-alpha"
+    },
+    {
+      "id": "col-a3",
+      "name": "Review",
+      "position": 2,
+      "projectId": "proj-alpha"
+    },
+    {
+      "id": "col-a4",
+      "name": "Done",
+      "position": 3,
+      "projectId": "proj-alpha"
+    },
+    {
+      "id": "col-b1",
+      "name": "To Do",
+      "position": 0,
+      "projectId": "proj-beta"
+    },
+    {
+      "id": "col-b2",
+      "name": "In Progress",
+      "position": 1,
+      "projectId": "proj-beta"
+    },
+    {
+      "id": "col-b3",
+      "name": "Review",
+      "position": 2,
+      "projectId": "proj-beta"
+    },
+    {
+      "id": "col-b4",
+      "name": "Done",
+      "position": 3,
+      "projectId": "proj-beta"
+    },
+    {
+      "id": "col-g1",
+      "name": "To Do",
+      "position": 0,
+      "projectId": "proj-gamma"
+    },
+    {
+      "id": "col-g2",
+      "name": "In Progress",
+      "position": 1,
+      "projectId": "proj-gamma"
+    },
+    {
+      "id": "col-g3",
+      "name": "Review",
+      "position": 2,
+      "projectId": "proj-gamma"
+    },
+    {
+      "id": "col-g4",
+      "name": "Done",
+      "position": 3,
+      "projectId": "proj-gamma"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t1-1",
+      "title": "Audit virtual private network configurations",
+      "columnId": "col-a2",
+      "assigneeIds": [
+        "u5"
+      ],
+      "status": "IN_PROGRESS",
+      "projectId": "proj-alpha"
+    },
+    {
+      "id": "t1-2",
+      "title": "Measure connection pool socket leaks",
+      "columnId": "col-a1",
+      "assigneeIds": [
+        "u4"
+      ],
+      "status": "TO_DO",
+      "projectId": "proj-alpha"
+    },
+    {
+      "id": "t1-3",
+      "title": "Run isolated chaos crash testing in stage-3 region",
+      "columnId": "col-a3",
+      "assigneeIds": [
+        "u4",
+        "u5"
+      ],
+      "status": "REVIEW",
+      "projectId": "proj-alpha"
+    },
+    {
+      "id": "t1-4",
+      "title": "Configure primary Datadog instrumentation metrics",
+      "columnId": "col-a4",
+      "assigneeIds": [
+        "u2"
+      ],
+      "status": "DONE",
+      "projectId": "proj-alpha"
+    },
+    {
+      "id": "t1-5",
+      "title": "Verify TLS handshake performance stats",
+      "columnId": "col-a1",
+      "assigneeIds": [
+        "u4"
+      ],
+      "status": "TO_DO",
+      "projectId": "proj-alpha"
+    },
+    {
+      "id": "t2-1",
+      "title": "Create tailored motion bezier values",
+      "columnId": "col-b2",
+      "assigneeIds": [
+        "u8"
+      ],
+      "status": "IN_PROGRESS",
+      "projectId": "proj-beta"
+    },
+    {
+      "id": "t2-2",
+      "title": "Optimize layouts for high dynamic load curves",
+      "columnId": "col-b3",
+      "assigneeIds": [
+        "u7"
+      ],
+      "status": "REVIEW",
+      "projectId": "proj-beta"
+    },
+    {
+      "id": "t2-3",
+      "title": "Write automated viewport capture regression tests",
+      "columnId": "col-b1",
+      "assigneeIds": [
+        "u7",
+        "u8"
+      ],
+      "status": "TO_DO",
+      "projectId": "proj-beta"
+    },
+    {
+      "id": "t2-4",
+      "title": "Confirm AAA accessibility contrast alignments",
+      "columnId": "col-b4",
+      "assigneeIds": [
+        "u3"
+      ],
+      "status": "DONE",
+      "projectId": "proj-beta"
+    },
+    {
+      "id": "t3-1",
+      "title": "Implement rate limiter policies via Redis",
+      "columnId": "col-g1",
+      "assigneeIds": [
+        "u5"
+      ],
+      "status": "TO_DO",
+      "projectId": "proj-gamma"
+    },
+    {
+      "id": "t3-2",
+      "title": "Set up zero-trust root certificate authorities",
+      "columnId": "col-g2",
+      "assigneeIds": [
+        "u5",
+        "u1"
+      ],
+      "status": "IN_PROGRESS",
+      "projectId": "proj-gamma"
+    }
+  ],
+  "reports": [
+    {
+      "id": "rep-a1",
+      "title": "Spring Architecture Review Status",
+      "content": "The core committee officially signed off on the multi-tenant message latency mitigation map. Dynamic connection recycle speeds decreased handshake latencies by 35%. No regressions noted.",
+      "status": "SENT",
+      "scheduledDate": "2026-06-10",
+      "projectId": "proj-alpha"
+    },
+    {
+      "id": "rep-a2",
+      "title": "Multicast Core Reliability Briefing",
+      "content": "Review of dynamic recovery loops across edge availability groups. Preparing deployment vectors and container readiness files to initiate live checks.",
+      "status": "SCHEDULED",
+      "scheduledDate": "2026-06-25",
+      "projectId": "proj-alpha"
+    },
+    {
+      "id": "rep-b1",
+      "title": "Design-to-Dev Token Freeze Complete",
+      "content": "The styling guides and interactive motion behaviors are fully compiled into tailwind classes. Fluid scaling supports resolutions from compact cellular screens to ultra-wide desktop monitors.",
+      "status": "SENT",
+      "scheduledDate": "2026-06-12",
+      "projectId": "proj-beta"
+    },
+    {
+      "id": "rep-b2",
+      "title": "User Analytics Visual Dashboard Release",
+      "content": "Scheduling final canvas component layouts. Features robust real-time updates and customizable reports that stakeholders can download directly.",
+      "status": "SCHEDULED",
+      "scheduledDate": "2026-06-20",
+      "projectId": "proj-beta"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-1",
+      "text": "Telemetry has been hooked to the staging server. Ready for audit.",
+      "createdAt": "2026-06-13T09:15:00.000Z",
+      "projectId": "proj-alpha",
+      "userId": "u2",
+      "userName": "Lucas Vance"
+    },
+    {
+      "id": "msg-2",
+      "text": "Awesome Lucas. I am launching the VPN sandbox check now.",
+      "createdAt": "2026-06-13T09:22:00.000Z",
+      "projectId": "proj-alpha",
+      "userId": "u5",
+      "userName": "Sarah Connor"
+    },
+    {
+      "id": "msg-3",
+      "text": "Devon, do we have final approval for the canvas Bezier speeds?",
+      "createdAt": "2026-06-13T10:45:00.000Z",
+      "projectId": "proj-beta",
+      "userId": "u8",
+      "userName": "Elio Perlman"
+    },
+    {
+      "id": "msg-4",
+      "text": "Yes! The smooth curve model is fully approved.",
+      "createdAt": "2026-06-13T11:02:00.000Z",
+      "projectId": "proj-beta",
+      "userId": "u3",
+      "userName": "Devon Chen"
+    }
+  ],
+  "adminAccounts": [
+    {
+      "id": "adm-1",
+      "adminId": "ADMIN1",
+      "password": "admin",
+      "linkedUserId": "u1"
+    }
+  ],
+  "systemCommands": [
+    {
+      "id": "sc-1",
+      "commandText": "INIT_SYSTEM_PROTOCOL: All departments ensure checklist metrics are uploaded by 18:00.",
+      "timestamp": "2026-06-14T10:00:00.000Z",
+      "createdBy": "Patricia Miller (MANAGER)"
+    }
+  ],
+  "firedEmployees": []
+}
